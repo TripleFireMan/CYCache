@@ -1,10 +1,9 @@
 # CYCache
-一个缓存管理的工具类，支持NSUserDefault、Sqilte、Archieve、MMKV
+一个缓存管理的工具类，支持Plist、Sqilte、Archieve
 
 
 ## 1.数据库存储
 
-// 数据库存储
 ```objc
 [[CYSqliteCache defaultCache] setObject:@{@"name":@"成焱"} forKey:@"user"];
 id obj = [[CYSqliteCache defaultCache] objectForKey:@"user"];
