@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'CYCacheDemo' do
+    
+    platform:ios,'8.0'
+#pod 'SDWebImage','3.7.0'
+#pod 'AFNetworking','2.6.0'
+#pod 'CYKit',:'path => /..'
+
+#pod 'Masonry',             '~> 1.0.2'
+#pod 'BlocksKit',           '~> 2.2.5'
+#pod 'CocoaLumberjack',     '~> 3.0.0'
+#pod 'FMDB','~> 2.7'
+
+#pod 'AFNetworking'
+#pod 'ReactiveObjC'
+#pod 'YYKit'
+pod 'CYCache',:path => '../'
+#pod 'XHToast'
+#pod 'CocoaLumberjack'
+end

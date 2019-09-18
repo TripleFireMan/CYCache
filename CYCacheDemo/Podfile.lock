@@ -1,0 +1,16 @@
+PODS:
+  - CYCache (0.0.1)
+
+DEPENDENCIES:
+  - CYCache (from `../`)
+
+EXTERNAL SOURCES:
+  CYCache:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CYCache: 3cf1d790b792d0c042d23b8c1f449001f381a894
+
+PODFILE CHECKSUM: 17edf1ed0f681241d1882c54a1418a47c609b3ea
+
+COCOAPODS: 1.6.1
