@@ -1,16 +1,26 @@
 PODS:
-  - CYCache (0.0.1)
+  - CYCache (0.0.1):
+    - FMDB (~> 2.7)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
 
 DEPENDENCIES:
   - CYCache (from `../`)
+  - FMDB (~> 2.7)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
 
 EXTERNAL SOURCES:
   CYCache:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CYCache: 3cf1d790b792d0c042d23b8c1f449001f381a894
+  CYCache: 2789d74a0f107916bffd1608118daf8d59825a8e
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
 
-PODFILE CHECKSUM: 17edf1ed0f681241d1882c54a1418a47c609b3ea
+PODFILE CHECKSUM: dbe132914e534d5e7564d14339fcd1ca90954f57
 
 COCOAPODS: 1.6.1

@@ -3,11 +3,14 @@
 //  CYCache
 //
 //  Created by 成焱 on 2019/9/18.
-//  Copyright © 2019 cheng.yan. All rights reserved.
 //
 
+#ifndef CYCache_h
+#define CYCache_h
 #import <Foundation/Foundation.h>
-
-@interface CYCache : NSObject
-
-@end
+#import "CYCacheDefine.h"
+#import "CYDataBase.h"
+#import "CYSqliteCache.h"
+#import "CYPlistCache.h"
+#import "CYArchieveCache.h"
+#endif /* CYCache_h */

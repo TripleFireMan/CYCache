@@ -1,16 +1,15 @@
 //
-//  CYArchieve.h
+//  CYArchieveCache.h
 //  CYCache
 //
 //  Created by 成焱 on 2019/9/18.
-//  Copyright © 2019 cheng.yan. All rights reserved.
-//
+//  钥匙串存储数据
 
 #import <Foundation/Foundation.h>
-
+#import "CYCacheProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CYArchieve : NSObject
+@interface CYArchieveCache : NSObject <CYCacheProtocol>
 
 @end
 
