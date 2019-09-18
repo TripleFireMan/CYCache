@@ -47,6 +47,13 @@
         self.name = @"CYCache.plist";
         self.type = CYCacheType_Plist;
         self.data = [NSMutableDictionary dictionary];
+        
+        NSString *cacheFileDirectory = CY_DEFAULT_CACHE_DIRECTORY;
+        BOOL isDirect = NO;
+        if (![[NSFileManager defaultManager] fileExistsAtPath:cacheFileDirectory isDirectory:&isDirect]) {
+            [[NSFileManager defaultManager] createDirectoryAtPath:cacheFileDirectory withIntermediateDirectories:YES attributes:nil error:nil];
+        }
+        
         NSString *filePath = [CY_DEFAULT_CACHE_DIRECTORY stringByAppendingPathComponent:self.name];
         if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
             self.data = [NSMutableDictionary dictionaryWithContentsOfURL:[NSURL fileURLWithPath:filePath]];
