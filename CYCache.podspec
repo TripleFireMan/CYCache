@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "CYCache"
   spec.version      = "0.0.1"
-  spec.summary      = "一个缓存管理的工具类，支持NSUserDefault、Sqilte、Archieve、MMKV"
+  spec.summary      = "一个缓存管理的工具类"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -62,7 +62,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/TripleFireMan/CYCache.git", :tag => "spec.version.to_spec" }
+  spec.source       = { :git => "https://github.com/TripleFireMan/CYCache.git", :tag => spec.version.to_s}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
